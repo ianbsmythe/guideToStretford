@@ -11,6 +11,10 @@ body {
     background: rgb(245, 242, 242);
 }
 
+img:hover {
+    filter: grayscale(0%);
+}
+
 #nav-bar {
     display: flex;
     justify-content: flex-end;
@@ -66,7 +70,7 @@ p {
 }
 
 #stretford-intro p {
-    font-size: 4vw;
+    font-size: 3vw;
     max-width: 100%;
     flex-grow: 1;
     min-height: 15vh;
@@ -89,9 +93,8 @@ p {
 }
 
 #highlights {
-    display: flex;
-    padding: 4vh 3vw;
     background: #FAA9AA;
+    padding: 2vh 3vw;
 }
 
 h2 {
@@ -100,16 +103,95 @@ h2 {
     margin-bottom: 2vh;
 }
 
-#highlights p {
-    font-size: 4vw;
+#highlights-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
 }
 
-#highlight-images {
-    filter: grayscale(100%);
-    max-width: 40vw;
-    max-height: 30vw;
-    object-fit: cover;
+.highlight-item {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
 }
+
+.highlight-images {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#highlights-item p {
+    font-size: 4vw;
+    margin: 0;
+}
+
+#stretfordian-container {
+    background: rgb(175, 174, 174);
+    padding: 2vh 3vw;
+    text-align: center;
+    padding-bottom: 12vh;
+}
+
+#stretfordian-container h2 {
+    margin-bottom: 1vh;
+}
+
+#stretfordian-container p {
+    color: #0f0f0f;
+    font-size: 3vw;
+    margin-bottom: 2vh;
+    padding: 0;
+}
+
+#stretfordians-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+}
+
+.stretfordian-images {
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    padding: 2vw;
+}
+
+.stretfordian-info p {
+    font-size: 4vw;
+    margin-top: 1vh;
+}
+
+#footer {
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 10vh;  /* Footer height */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#footer p {
+    color: rgb(245, 242, 242);
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+}
+
+
+
 
 @media (min-width: 768px) {
     #hero {
@@ -135,6 +217,50 @@ h2 {
         width: 20vw;
         height: 20vw;
     }
+
+    #highlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    h2 {
+        font-size: 8vw;
+    }
+
+    .highlight-item p {
+        font-size: 2vw;
+    }
+
+    .highlight-images {
+        width: 100%;
+        height: 30vw;
+        object-fit: cover;
+    }
+
+    #stretfordian-container {
+        padding-bottom: 9vh;  /* Adjust padding for medium screens */
+    }
+
+    #stretfordians-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 3vh;
+    }
+
+    .stretfordian-images {
+        width: 30vw; 
+        height: 30vw; 
+    }
+
+    .stretfordian-info p {
+        font-size: 3vw;
+    }
+
+    #footer {
+        height: 8vh;  /* Slightly smaller height for tablets */
+    }
+
+    #footer p {
+        font-size: 2vw;  /* Adjust font size for tablets */
+    }
 }
 
 @media (min-width: 1200px) {
@@ -155,6 +281,47 @@ h2 {
     .intro-images {
         width: 18vw;
         height: 18vw;
+    }
+
+    #highlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlight-item p {
+        font-size: 2vw;
+    }
+    .highlight-images {
+        max-height: 50vh;
+    }
+
+    #stretfordian-container {
+        padding-bottom: 7vh;  /* Adjust padding for medium screens */
+    }
+    
+    #stretfordians-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 3vh;
+    }
+
+    .stretfordian-images {
+        width: 20vw; 
+        height: 20vw;
+    }
+
+    .stretfordian-info p {
+        font-size: 2vw; 
+    }
+
+    #stretfordian-container p {
+        font-size: 2.5vw;
+    }
+
+    #footer {
+        height: 6vh;  /* Even smaller height for large screens */
+    }
+
+    #footer p {
+        font-size: 1.5vw;  /* Smaller font for larger screens */
     }
 }
 
