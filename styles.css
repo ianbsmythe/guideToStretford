@@ -27,7 +27,7 @@ body {
 #nav-icon {
     width: 6vh;
     height: 6vh;
-    margin-right: 2vw;
+    margin-right: 1vw;
 }
 
 #hero {
@@ -47,9 +47,15 @@ body {
 
 h1 {
     color: #FAA9AA;
+    text-shadow: 0.2vw 0.2vw 0.2vw #0f0f0f;
     font-size: 12vw;    
     line-height: 1.2;
     margin: 0;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0f0f0f;
 }
 
 #stretford-intro {
@@ -60,9 +66,7 @@ h1 {
 }
 
 #stretford-intro p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 4vw;
-    color: #0f0f0f;
     max-width: 100%;
     flex-grow: 1;
     min-height: 15vh;
@@ -85,7 +89,26 @@ h1 {
 }
 
 #highlights {
+    display: flex;
     padding: 4vh 3vw;
+    background: #FAA9AA;
+}
+
+h2 {
+    color: #0f0f0f;
+    font-size: 7vw;
+    margin-bottom: 2vh;
+}
+
+#highlights p {
+    font-size: 4vw;
+}
+
+#highlight-images {
+    filter: grayscale(100%);
+    max-width: 40vw;
+    max-height: 30vw;
+    object-fit: cover;
 }
 
 @media (min-width: 768px) {
