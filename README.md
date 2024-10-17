@@ -16,7 +16,7 @@ The **Stretford Guide** is a simple, responsive web page that offers insights in
 
 - **Overview**: Stretford's past, present and future - including its market gardens; role in Manchester’s industrial growth and future developments.
 - **Modern Attractions**: Highlighting key places to visit such as Old Trafford Football Ground, Trafford Centre, and the Imperial War Museum North.
-- **Famous Stretfordians**: A section dedicated to notable people from Stretford, including Morrissey, Emmeline Pankhurst, and Ian Curtis.
+- **Famous Stretfordians**: A section dedicated to notable people from Stretford or who have close ties to it. Morrissey, Emmeline Pankhurst, and Ian Curtis to name a few.
   
 ## Features
 
